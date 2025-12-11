@@ -1,0 +1,240 @@
+/* src/app/globals.css */
+
+:root {
+  --max-width: 1200px;
+  --border-radius: 12px;
+
+  --foreground-rgb: 230, 241, 255;
+  --background-start-rgb: 10, 25, 47;
+  --background-end-rgb: 10, 25, 47;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #03dac6 0deg,
+    #03dac633 55deg,
+    #03dac633 120deg,
+    #03dac6 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(3, 218, 198, 0.25),
+    rgba(3, 218, 198, 0)
+  );
+
+  --tile-start-rgb: 10, 25, 47;
+  --tile-end-rgb: 17, 34, 64;
+  --tile-border: conic-gradient(
+    #03dac680,
+    #03dac640,
+    #03dac630,
+    #03dac620,
+    #03dac610,
+    #03dac610,
+    #03dac680
+  );
+
+  --callout-rgb: 17, 34, 64;
+  --callout-border-rgb: 3, 218, 198;
+  --card-rgb: 17, 34, 64;
+  --card-border-rgb: 3, 218, 198;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(3, 218, 198, 0.3) rgb(var(--background-start-rgb));
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--background-start-rgb));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(3, 218, 198, 0.3);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(3, 218, 198, 0.5);
+}
+
+/* For Firefox */
+html {
+  scrollbar-color: rgba(3, 218, 198, 0.3) rgb(var(--background-start-rgb));
+  scrollbar-width: thin;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(3, 218, 198, 0.4);
+  color: #e6f1ff;
+}
+
+/* Classes for animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-in-out forwards;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Underline animation for links */
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #03dac6;
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Button hover effects */
+.button-container button {
+  position: relative;
+  z-index: 1;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(90deg, #03dac6, #bb86fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
