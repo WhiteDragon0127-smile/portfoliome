@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
                   >
                     <Box
                       component="img"
-                      src="/profile.png"
+                      src="/profile.jpg"
                       alt="Profile"
                       sx={{
                         width: '100%',
@@ -205,7 +205,7 @@ const Footer: React.FC = () => {
                       WebkitTextFillColor: 'transparent',
                     }}
                   >
-                    Roman
+                    Kevin
                   </Typography>
                 </Box>
               </motion.div>

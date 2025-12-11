@@ -127,7 +127,7 @@ const ExperienceSection: React.FC = () => {
                 letterSpacing: '-0.5px',
               }}
             >
-              Where I've Worked
+              Professional Experience
             </Box>
           </Typography>
         </motion.div>

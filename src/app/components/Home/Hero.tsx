@@ -18,6 +18,7 @@ const Hero: React.FC = () => {
   const theme = useTheme();
   const controls = useAnimationControls();
   const [scrollIndicator, setScrollIndicator] = useState(true);
+  const [mounted, setMounted] = useState(false);
   
   // Typing animation states
   const [displayText, setDisplayText] = useState('');
@@ -39,6 +40,7 @@ const Hero: React.FC = () => {
   
   // Handle scroll indicator visibility
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setScrollIndicator(false);
@@ -117,6 +119,11 @@ const Hero: React.FC = () => {
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
   };
   
+  if (!mounted) {
+    // Avoid hydration mismatches for browser-dependent layout bits
+    return null;
+  }
+
   return (
     <Box 
       sx={{
@@ -735,7 +742,7 @@ const Hero: React.FC = () => {
                     {/* Profile Image */}
                     <Box
                       component="img"
-                      src="/profile.png"
+                      src="/profile.jpg"
                       alt="Profile photo"
                       sx={{
                         width: '100%',
@@ -937,7 +944,7 @@ const Hero: React.FC = () => {
                     {/* Mobile Profile Image */}
                     <Box
                       component="img"
-                      src="/profile.png"
+                      src="/profile.jpg"
                       alt="Profile photo"
                       sx={{
                         width: '100%',

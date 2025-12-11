@@ -10,8 +10,8 @@ import { LoadingProvider } from './context/LoadingContext';
 import LoadingOverlay from './components/Layout/LoadingOverlay';
 
 export const metadata: Metadata = {
-  title: 'Super Dev | FullStack & AI Voice Agent Developer',
-  description: 'Portfolio of Super Dev, FullStack & AI Voice Agent Developer',
+  title: 'Super Dev | AI & FullStack Developer',
+  description: 'Portfolio of Super Dev, AI & FullStack Developer',
 };
 
 export default function RootLayout({

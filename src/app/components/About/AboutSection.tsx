@@ -247,7 +247,7 @@ const AboutSection: React.FC = () => {
                     mb: 3,
                   }}
                 >
-                  Hello! My name is <Box component="span" sx={{ color: 'primary.main', fontWeight: 700 }}>Roman</Box>, and I am passionate about creating impactful, innovative digital experiences that live on the internet.
+                  Hello! My name is <Box component="span" sx={{ color: 'primary.main', fontWeight: 700 }}>Kevin</Box>, and I am passionate about creating impactful, innovative digital experiences that live on the internet.
                 </Typography>
               </motion.div>
 
@@ -262,7 +262,7 @@ const AboutSection: React.FC = () => {
                     mb: 3,
                   }}
                 >
-                  Fast-forward to today (2025), I've had the privilege of working with startups, agencies, and large corporations, contributing to projects that merge cutting-edge technology with user-centric design. My current focus is on building accessible, inclusive, and efficient products, with a particular specialization in AI-powered solutions and voice agent systems.
+                  Full-Stack & Al Developer with expertise in React, Next.js, JavaScript/TypeScript, and Al technologies(LLM, LangChain, chatbots). Proficient in buildingscalable applications with Supabase, Python, and cloud services. Passionate about integrating Alsolutionsinto modern web and mobile platforms. Certified Microsoft Professional (MCP) with a strong foundation in both frontend and backend development.
                 </Typography>
               </motion.div>
 
@@ -294,24 +294,20 @@ const AboutSection: React.FC = () => {
                 animate="visible"
               >
                 <ProjectCard
-                  title="Arogyam Kiosk"
-                  description="Arogyam Kiosk is a futuristic, modern sci-fi themed web application designed to help rural communities book telemedicine appointments with doctors. The platform provides essential healthcare features, including video consultations, medicine searches, and doctor messaging, all within a simple and functional UI."
+                  title="dreamina.ai"
+                  description="I built this AI solution platform before, you know, where folks just type prompts and get crazy good images or videos, and I wired it up with Next.js frontend, Supabase for auth and storage, Python microservices for the heavy AI stuff, and Prisma ORM to juggle all the creative data in real-time, which made the whole thing feel super smooth and flexible for artists and marketers both"
                 />
 
                 <ProjectCard
-                  title="​VectorVein"
-                  description="​VectorVein is a no-code AI workflow platform that enables users to create and automate intelligent workflows without programming skills. By simply dragging and dropping workflow nodes, users can design processes tailored to their needs, enhancing productivity and efficiency."
+                  title="Docus.ai"
+                  description="Developed Docus.ai utilizing Node.js, Express.js, and React. Implemented cutting-edge AI models and algorithms to analyze symptoms and test results, generating comprehensive health reports and potential diagnoses. Seamlessly integrated with top human doctors in the US & EU for validation of AI-generated reports. Get rapid insights and accurate diagnoses with Docus.ai, combining AI efficiency with human expertise for optimal healthcare outcomes."
                 />
 
                 <ProjectCard
-                  title="Lecca.io"
-                  description="Lecca.io is an AI platform that allows you to configure and deploy Large Language Models (LLMs) equipped with powerful tools and workflows. Build, customize, and automate your AI agents with ease."
+                  title="Freebeat.ai"
+                  description="Engineered the V9.7 platform on a sophisticated multi-agent architecture. It utilizes GPT-4o and Gemini for high-level semantic analysis of video content—interpreting mood, pace, and narrative. This data orchestrates a dedicated music composition agent, while Flux and Runway Gen-3 agents handle visual-temporal synchronization. The result is an end-to-end system that generates structurally coherent, original soundtracks precisely matched to the visual dynamics of any input video, exporting both the master track and time-coded project stems."
                 />
 
-                <ProjectCard
-                  title="Zoundz Pet Anxiety App"
-                  description="Developed a mobile app to help pet owners manage their pets' anxiety with curated music streams, advanced user controls, analytics, and ad management."
-                />
               </motion.div>
 
               <motion.div variants={itemVariants}>

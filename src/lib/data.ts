@@ -2,7 +2,7 @@
 import { PersonalInfo, Skill, Experience, Project } from '../types';
 
 export const personalInfo: PersonalInfo = {
-  name: 'Roman',
+  name: 'Kevin',
   title: 'AI & Full Stack Developer',
   email: 'new.heaven918@gmail.com',
   bio: `Dynamic and experienced AI & Full Stack Developer with a proven track record in designing and implementing innovative AI-driven solutions and scalable web applications. Skilled in developing advanced platforms, including AI-powered recruitment tools, personalized healthcare assistants, virtual customer agents, and therapeutic apps for pets. Expertise spans a wide range of technologies such as JavaScript, Python, React, Node.js, Django, AI Chatbots, OpenAI APIs, LangChain, and more. Adept at leveraging machine learning, prompt engineering, and data analytics to optimize system performance, enhance user experience, and deliver impactful solutions across diverse industries.`,
@@ -30,25 +30,23 @@ export const skills: Skill[] = [
   
 
   // Frameworks & Databases
-  { name: 'HTML', category: 'frontend' },
-  { name: 'CSS', category: 'frontend' },
-  { name: 'JavaScript', category: 'frontend' },
   { name: 'React.js', category: 'frontend' },
   { name: 'Next.js', category: 'frontend' },
   { name: 'Vue.js', category: 'frontend' },
   { name: 'Angular', category: 'frontend' },
-  { name: 'Svelte', category: 'frontend' },
-  { name: 'React Native', category: 'frontend' },
-  { name: 'Expo', category: 'frontend' },
-  { name: 'Flutter', category: 'frontend' },
+  { name: 'JavaScript', category: 'frontend' },
+  { name: 'TypeScript', category: 'frontend' },
+  { name: 'HTML', category: 'frontend' },
+  { name: 'CSS', category: 'frontend' },
   { name: 'Tailwind CSS', category: 'frontend' },
-  { name: 'Bootstrap', category: 'frontend' },
-  { name: 'Material-UI', category: 'frontend' },
-  { name: 'Ant Design', category: 'frontend' },
+  { name: 'React Native', category: 'frontend' },
+  { name: 'Flutter', category: 'frontend' },
   { name: 'Bubble.io', category: 'frontend' },
   { name: 'Node.js', category: 'backend' },
   { name: 'Express.js', category: 'backend' },
   { name: 'Django', category: 'backend' },
+  { name: 'Supabase', category: 'backend' },
+  { name: 'Python', category: 'backend' },
   { name: 'Flask', category: 'backend' },
   { name: 'FastAPI', category: 'backend' },
   { name: 'Nest.js', category: 'backend' },
@@ -70,43 +68,39 @@ export const skills: Skill[] = [
 
 export const experienceData: Experience[] = [
   {
-    company: 'Arogyam Kiosk',
-    title: 'Arogyam Kiosk Developer',
-    date: '09/2020 - 07/2022',
+    company: 'NEXUSAI SOLUTIONS',
+    title: 'SENIOR FULL-STACK & AI DEVELOPER',
+    date: '02/2021 - Present',
     responsibilities: [
-      `User Authentication: Secure login, signup, and email verification using Supabase.`,
-      'Medicine Search: Search for Ayurvedic and general medicines.',
-      'Appointment Booking: Schedule telemedicine appointments with available doctors.',
-      'Messaging System: Communicate with doctors for queries.',
-      'Video Consultation: Conduct telemedicine video calls via Agora.',
-      'Chatbot Support: AI-powered chatbot using Hugging Face API for healthcare queries.',
+      `Spearheaded the development of an Al-powered customersupport chatbot using Next.js, LangChain and OpenAI GPT-, reducing response times by 0% for a fintech client.`,
+      'Architected a Supabase-backed real-time analytics dashboard for a healthcare startup, processing 10K+ data points/sec with 50% lower latency than Firebase.',
+      'Deployed scalable Python/Flask microservices on Azure (MCP-certified) to automate document processing, cutting manual labor costs by $15K annually.',
     ],
-    technologies: ['TypeScript', 'Agora SDK', 'Hugging Face API', 'ChatBot', 'Tailwind CSS']
+    technologies: []
   },
   {
-    company: 'VectorVein',
-    title: 'VectorVein Developer',
-    date: '09/2019 - 08/2020',
+    company: 'VERTEX TECHNOLOGIES',
+    title: 'FULL STACK DEVELOPER',
+    date: '10/2017 - 01/2021',
     responsibilities: [
-      'Rich Functionality: VectorVein offers over 60 workflow nodes, encompassing generative language models, multimodal processing, vector databases, and web crawlers. This extensive range allows users to automate various tasks, from data analysis to content creation. ',
-      'Agent Chat: Users can assign multiple workflows to AI agents, enabling conversational interactions where the AI determines and executes the appropriate workflow based on the context.',
-      `Graphic Design: The platform's intuitive interface allows users to design workflows by connecting nodes logically. For those with programming knowledge, custom programming nodes are available to extend functionality further.`
+      'Built a with dynamic Al recommendationsfor 50+ SME clients.',
+      'Created and updated Moodle course materials including modules, quizzes, and assignments, based on instructional design principles and accessibility standards.',
+      `Conducted Moodle training sessionsfor faculty and staff, and provided technicalsupport forsystem users.`,
+      'Maintained and updated course content and gradebooksfor more than 1,000 students and 50 faculty members.',
+      'Worked closely with IT staff to ensure system security, data privacy, and backup and disaster recovery procedures.'
     ],
-    technologies: ['OpenAI', 'Deepgram', 'OpenAI Embeddings', 'LangChain', 'langflow','Python', 'React']
+    technologies: []
   },
   {
-    company: 'Lecca.io',
-    title: 'Lecca',
-    date: '10/2018 - 07/2019',
+    company: 'CODECRAFT STUDIOS',
+    title: 'FRONTEND ENGINEER',
+    date: '07/2014 - 09/2017',
     responsibilities: [
-      'Custom LLM Configuration: Choose from multiple AI providers and models',
-      'Tool Integration: Equip your agents with powerful tools to interact with various services',
-      'Workflow Builder: Create complex automation workflows similar to n8n, Make.com, or Zapier',
-      'Build in RAG: Enjoy basic built-in RAG features to easily upload and query data',
-      'Build your own tools: Build custom apps, actions, and triggers using our docs',
-      'Automate LLMs: Configure triggers that will enable your AI Agents to work autonomously.'
+      'Modernized legacy jQuery systemsinto React SPAs for 3+ logistics clients, reducing page load timesfrom 5sto 1.2s.',
+      'Developed a Python-based CMS scraper to autogenerate SEO reports,saving 15+ hours/week for marketing teams.',
+      'Collaborated on an AR prototype using Three.jsfor a real estate client, boosting property engagement by 30%.'
     ],
-    technologies: ['ChatGPT', 'RAG', 'AI Agent Development', 'n8n','Make.com']
+    technologies: []
   }
 ];
 
