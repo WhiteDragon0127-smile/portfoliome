@@ -8,7 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import EmailIcon from '@mui/icons-material/Email';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { personalInfo } from '../../../lib/data';
 
 const Sidebar: React.FC = () => {
@@ -40,7 +40,7 @@ const Sidebar: React.FC = () => {
         delayChildren: 1
       }
     }
-  };
+  } satisfies Variants;
 
   const itemVariants = {
     hidden: { opacity: 0, x: -20, y: 15 },
@@ -55,7 +55,7 @@ const Sidebar: React.FC = () => {
         mass: 0.8
       }
     }
-  };
+  } satisfies Variants;
   
   const lineVariants = {
     hidden: { height: 0, opacity: 0 },
@@ -68,7 +68,7 @@ const Sidebar: React.FC = () => {
         ease: "easeOut"
       }
     }
-  };
+  } satisfies Variants;
 
   return (
     <Box

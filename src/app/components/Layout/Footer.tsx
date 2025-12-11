@@ -21,7 +21,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { personalInfo } from '@/lib/data';
 
 // Define a type for our social links
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
         staggerChildren: 0.12
       }
     }
-  };
+  } satisfies Variants;
 
   const itemVariants = {
     hidden: { opacity: 0, y: 15 },
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
       y: 0,
       transition: { type: "spring", stiffness: 300, damping: 20 }
     }
-  };
+  } satisfies Variants;
 
   const scrollToTop = () => {
     if (typeof window === 'undefined') return;

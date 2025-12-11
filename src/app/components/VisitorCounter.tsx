@@ -6,7 +6,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 
 // Format visitor count to K notation (1K+, 1.5K+, etc.)
 const formatVisitorCount = (count: number | null): string => {
@@ -282,7 +282,7 @@ const VisitorCounter: React.FC<VisitorCounterProps> = ({ variant = 'default' }) 
       }
     },
     tap: { scale: 0.9, transition: { duration: 0.1 } }
-  };
+  } satisfies Variants;
 
   const countVariants = {
     initial: { opacity: 0, scale: 0.5 },
@@ -300,7 +300,7 @@ const VisitorCounter: React.FC<VisitorCounterProps> = ({ variant = 'default' }) 
       ],
       transition: { duration: 1.2, repeat: 2 }
     }
-  };
+  } satisfies Variants;
 
   const badgeVariants = {
     pulse: {
@@ -312,7 +312,7 @@ const VisitorCounter: React.FC<VisitorCounterProps> = ({ variant = 'default' }) 
       ],
       transition: { duration: 1, repeat: 2 }
     }
-  };
+  } satisfies Variants;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -320,7 +320,7 @@ const VisitorCounter: React.FC<VisitorCounterProps> = ({ variant = 'default' }) 
       opacity: 1,
       transition: { duration: 0.5 }
     }
-  };
+  } satisfies Variants;
 
   // Minimal variant
   if (variant === 'minimal') {

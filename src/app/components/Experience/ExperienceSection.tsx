@@ -20,7 +20,7 @@ import {
 } from '@mui/material';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { experienceData } from '../../../lib/data';
 
 const ExperienceSection: React.FC = () => {
@@ -43,7 +43,7 @@ const ExperienceSection: React.FC = () => {
       x: 0,
       transition: { duration: 0.3 }
     }
-  };
+  } satisfies Variants;
 
   const contentVariants = {
     hidden: { opacity: 0, x: 20 },
@@ -60,12 +60,12 @@ const ExperienceSection: React.FC = () => {
       x: -20, 
       transition: { duration: 0.3 } 
     }
-  };
+  } satisfies Variants;
 
   const itemVariants = {
     hidden: { opacity: 0, x: 10 },
     visible: { opacity: 1, x: 0 }
-  };
+  } satisfies Variants;
 
   return (
     <Container maxWidth="lg" id="experience">

@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { Box, Typography, Container, Grid, Divider, Button, useTheme } from '@mui/material';
 import FeaturedProject from './FeaturedProject';
 import ProjectCard from './ProjectCard';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { featuredProjects, otherProjects } from '../../../lib/data';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -32,12 +32,12 @@ const WorkSection: React.FC = () => {
         delayChildren: 0.1,
       }
     }
-  };
+  } satisfies Variants;
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-  };
+  } satisfies Variants;
 
   return (
     <Container maxWidth="lg" id="work">

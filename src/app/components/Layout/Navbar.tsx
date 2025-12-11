@@ -28,7 +28,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import DownloadIcon from '@mui/icons-material/Download';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence, useAnimation } from 'framer-motion';
+import { motion, AnimatePresence, useAnimation, type Variants } from 'framer-motion';
 import VisitorCounter from '../VisitorCounter';
 
 interface NavItem {
@@ -149,12 +149,12 @@ const Navbar: React.FC = () => {
         damping: 10 
       } 
     }
-  };
+  } satisfies Variants;
 
   const menuIconVariants = {
     closed: { rotate: 0 },
     open: { rotate: 90 }
-  };
+  } satisfies Variants;
 
   const navButtonVariants = {
     initial: { y: -20, opacity: 0 },
@@ -172,7 +172,7 @@ const Navbar: React.FC = () => {
       }
     },
     tap: { scale: 0.95 }
-  };
+  } satisfies Variants;
 
   const drawerItemVariants = {
     closed: { x: -20, opacity: 0 },
@@ -186,7 +186,7 @@ const Navbar: React.FC = () => {
         damping: 24
       }
     })
-  };
+  } satisfies Variants;
 
   const isActive = (id: string) => {
     if (!activeSection && id === '01') return true;
